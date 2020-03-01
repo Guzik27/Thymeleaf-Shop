@@ -30,4 +30,9 @@ public class RestShopController {
         productDao.saveProduct(product);
     }
 
+    @GetMapping("products/single/{id}")
+    public Product getProduct(@PathVariable Long id) {
+        return productDao.getById(id);
+    }
+
 }
