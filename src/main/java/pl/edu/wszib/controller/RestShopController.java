@@ -25,4 +25,9 @@ public class RestShopController {
         productDao.removeProduct(id);
     }
 
+    @PostMapping("products/save")
+    public void saveProduct(@RequestBody Product product) {
+        productDao.saveProduct(product);
+    }
+
 }
