@@ -12,4 +12,6 @@ public interface UserDao {
     void removeUser(Long userId);
 
     User getById(Long userId);
+
+    void deactivationUsers(boolean active);
 }

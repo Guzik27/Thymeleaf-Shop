@@ -46,6 +46,9 @@ public class UserDaoImpl implements UserDao {
         return userMap.get(id);
     }
 
+    @Override
+    public void deactivationUsers (boolean active) {userMap.get(active);}
+
     private void prepareUserList() {
         User user = new User();
         user.setId(id);
