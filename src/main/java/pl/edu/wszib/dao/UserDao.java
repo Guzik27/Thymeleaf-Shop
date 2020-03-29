@@ -14,4 +14,6 @@ public interface UserDao {
     User getById(Long userId);
 
     void inactiveUsers();
+
+    void activeUsers();
 }

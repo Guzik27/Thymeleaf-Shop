@@ -50,4 +50,10 @@ public class UserController {
         userDao.inactiveUsers();
         return "redirect:/users";
     }
+
+    @GetMapping("users/active")
+    public String activeUsers(){
+        userDao.activeUsers();
+        return "redirect:/users";
+    }
 }

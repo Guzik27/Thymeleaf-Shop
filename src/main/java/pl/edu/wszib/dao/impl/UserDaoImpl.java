@@ -51,6 +51,14 @@ public class UserDaoImpl implements UserDao {
         }
     }
 
+    @Override
+    public void activeUsers() {
+        Set<Map.Entry<Long, User>> activeSet = userMap.entrySet();
+        for (Map.Entry<Long, User> user : activeSet) {
+            user.getValue().setActive(true);
+        }
+    }
+
     private void prepareUserList() {
         User user = new User();
         user.setId(id);
