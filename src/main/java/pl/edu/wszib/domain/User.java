@@ -1,5 +1,7 @@
 package pl.edu.wszib.domain;
 
+import java.util.Map;
+
 public class User {
     private long userId;
     private String login;
@@ -54,5 +56,9 @@ public class User {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public Iterable<? extends Map.Entry> entrySet() {
+        return null;
     }
 }

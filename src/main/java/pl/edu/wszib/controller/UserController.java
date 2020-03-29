@@ -44,4 +44,10 @@ public class UserController {
         model.addAttribute("user", user);
         return "user";
     }
+
+    @GetMapping("users/inactive")
+    public String inactiveUsers(){
+        userDao.inactiveUsers();
+        return "redirect:/users";
+    }
 }
