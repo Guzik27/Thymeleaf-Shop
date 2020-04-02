@@ -10,6 +10,8 @@ public class User {
     private String country;
     private boolean active;
 
+
+
     public long getId() {
         return userId;
     }

@@ -21,7 +21,7 @@ public class UserController {
     }
 
     @GetMapping("users/remove/{userId}")  /*?? id samo??*/
-    public String remove(@PathVariable Long userId){
+    public String removeUser(@PathVariable Long userId){
         userDao.removeUser(userId);
         return "redirect:/users";
     }
