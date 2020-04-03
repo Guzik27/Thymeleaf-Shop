@@ -9,9 +9,9 @@ public interface UserDao {
     List<User> getUsers(); // zwraca listę produktów
     void saveUser(User user); // nic nie zwraca, jako parametr oczekuje produktu
 
-    void removeUser(Long userId);
+    void removeUser(Long id);
 
-    User getById(Long userId);
+    User getById(Long id);
 
     void inactiveUsers();
 

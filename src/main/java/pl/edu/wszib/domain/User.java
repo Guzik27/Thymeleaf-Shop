@@ -3,7 +3,7 @@ package pl.edu.wszib.domain;
 import java.util.Map;
 
 public class User {
-    private long userId;
+    private long id;
     private String login;
     private String mail;
     private int age;
@@ -13,11 +13,11 @@ public class User {
 
 
     public long getId() {
-        return userId;
+        return id;
     }
 
     public void setId(long user) {
-        this.userId = user;
+        this.id = user;
     }
 
     public String getLogin() {

@@ -37,16 +37,16 @@ public class RestShopController {
         return productDao.getById(id);
     }
 
-    @Autowired
+   /* @Autowired
     private UserDao userDao;
 
     @GetMapping("users")
     public List<User> users() {return userDao.getUsers();}
 
 
-    @DeleteMapping("users/remove/{userId}")
-    public void removeUser(@PathVariable Long userId) {
-        userDao.removeUser(userId);
+    @DeleteMapping("users/remove/{id}")
+    public void removeUser(@PathVariable Long id) {
+        userDao.removeUser(id);
     }
 
     @PostMapping("users/save")
@@ -54,9 +54,9 @@ public class RestShopController {
         userDao.saveUser(user);
     }
 
-    @GetMapping("users/single/{userId}")
+    @GetMapping("users/single/{id}")
     public User getUser(@PathVariable Long userId) {
         return userDao.getById(userId);
     }
-
+*/
 }
